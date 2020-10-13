@@ -9,7 +9,7 @@ const HeaderMain = () => {
             <div className="col-md-4 offset-md-1">
                 <h1>Lets Grow Your <br /> Brand To The <br />Next Level</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis odio assumenda fugit voluptate dignissimos excepturi, ab dolorum tempore.</p>
-                <button className="btn btn-primary"> Hire Us </button>
+                <button className="btn btn-primary" style={{backgroundColor:'#2D2D2D'}}> Hire Us </button>
             </div>
             <div className="col-md-6">
                 <img src="https://i.ibb.co/ngmG0Nz/Frame.png" alt="" className="img-fluid" />

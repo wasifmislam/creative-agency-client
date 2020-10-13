@@ -1,5 +1,6 @@
 import React from 'react';
 import Carousel from '../Carousel/Carousel';
+import Contact from '../Contact/Contact';
 import Header from '../Header/Header';
 import HeaderMain from '../HeaderMain/HeaderMain';
 import Services from '../Services/Services';
@@ -14,6 +15,7 @@ const Home = () => {
             <Services></Services>
             <Carousel></Carousel>
             <Testimonials></Testimonials>
+            <Contact></Contact>
             
         </div>
     );
