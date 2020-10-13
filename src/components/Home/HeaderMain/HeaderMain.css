@@ -1,0 +1,11 @@
+.main-container{
+    background-color: #FBD062;
+}
+
+svg {
+    /* position: absolute; */
+    bottom: 0;
+    width: 100%;
+    height: 12vw;
+    /* set height to pixels if you want angle to change with screen width */
+  }
