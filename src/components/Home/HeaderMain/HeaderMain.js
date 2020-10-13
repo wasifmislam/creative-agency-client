@@ -17,6 +17,13 @@ const HeaderMain = () => {
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
                 <polygon fill="white" points="0,100 100,0 100,100" />
             </svg>
+        <div >
+            <img class="ml-5 mr-5"  style={{ width: '130px', height: '47px' }} src="https://i.ibb.co/8Nb64Kr/airbnb.png" alt="" />
+            <img class=" ml-5 mr-5"   style={{ width: '130px', height: '47px' }} src="https://i.ibb.co/jgCwwYT/google.png" alt="" />
+            <img class=" ml-5 mr-5"   style={{ width: '130px', height: '47px' }} src="https://i.ibb.co/HqwQwT1/netflix.png" alt="" />
+            <img class=" ml-5 mr-5"   style={{ width: '130px', height: '47px' }} src="https://i.ibb.co/pRZGvmc/slack.png" alt="" />
+            <img class=" ml-5 mr-5"   style={{ width: '130px', height: '47px' }} src="https://i.ibb.co/ySXpfrT/uber.png" alt="" />
+        </div>
 
         </main>
 
@@ -24,3 +31,9 @@ const HeaderMain = () => {
 };
 
 export default HeaderMain;
+
+//<img style={{width:'150px', height:'47px' }} src="https://i.ibb.co/8Nb64Kr/airbnb.png" alt=""/>
+//<img style={{width:'150px', height:'47px'}} src="https://i.ibb.co/jgCwwYT/google.png" alt=""/>
+//<img style={{width:'150px', height:'47px'}} src="https://i.ibb.co/HqwQwT1/netflix.png" alt=""/>
+//<img style={{width:'150px', height:'47px'}} src="https://i.ibb.co/pRZGvmc/slack.png" alt=""/>
+//<img style={{width:'150px', height:'47px'}} src="https://i.ibb.co/ySXpfrT/uber.png" alt=""/>
