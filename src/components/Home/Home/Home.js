@@ -1,4 +1,5 @@
 import React from 'react';
+import Carousel from '../Carousel/Carousel';
 import Header from '../Header/Header';
 import Services from '../Services/Services';
 
@@ -7,6 +8,7 @@ const Home = () => {
         <div>
             <Header></Header>
             <Services></Services>
+            <Carousel></Carousel>
         </div>
     );
 };
