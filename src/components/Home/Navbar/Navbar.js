@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { useFormContext } from 'react-hook-form';
+import { Link } from 'react-router-dom';
 import logo from '../../../images/logo.png';
+import { UserContext } from '../../../App';
+
 const Navbar = () => {
+    const[loggedInUser, setLoggedInUser] = useContext(UserContext);
     return (
         
             <nav class="navbar navbar-expand-lg navbar-light mb-3 ">
@@ -14,7 +19,7 @@ const Navbar = () => {
                     <ul class="navbar-nav ml-auto">
                        
                         <li class="nav-item active">
-                            <a class="nav-link mr-5 " href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link mr-5 " href="/home">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mr-5 " href="#">Our Portfolio</a>
@@ -25,8 +30,11 @@ const Navbar = () => {
                         <li class="nav-item">
                             <a class="nav-link mr-5  " href="#">Contact Us</a>
                         </li>
+                        <li>
+                         <small><strong>{loggedInUser.name}</strong></small>
+                        </li>
                         <li class="nav-item">
-                            <button class="btn btn-secondary btn-brand" style={{backgroundColor:'#2D2D2D'}}>Login</button>
+                        <Link to='/login'>   <button  class="btn btn-secondary btn-brand" style={{backgroundColor:'#2D2D2D'}}>Login</button> </Link> 
                         </li>
 
 

@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { useParams } from 'react-router-dom';
+import { UserContext } from '../../../App';
 // import './CustomerOrderPlace.css'
 
 const Contact = () => {
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext)
+    const {serviceType} = useParams();
     return (
        <section className=" my-5 py-5">
            <div className="container customer">
@@ -10,13 +14,13 @@ const Contact = () => {
                
                    <form action="">
                        <div className="form-group">
-                           <input type="text" className="form-control" placeholder="Your name/ company's name"/>
+                           <input type="name" defaultValue={loggedInUser.name} className="form-control" placeholder="Your name/ company's name"/>
                        </div>
                        <div className="form-group">
-                           <input type="text" className="form-control text-muted" placeholder="Your email address"/>
+                           <input type="email" defaultValue={loggedInUser.email} className="form-control " placeholder="Your email address"/>
                        </div>
                        <div className="form-group">
-                           <input type="text" className="form-control text-muted" placeholder="Your service"/>
+                           <input type="text" defaultValue={serviceType} className="form-control " placeholder="Your service"/>
                        </div>
                        <div className="form-group">
                            <textarea name="" className="form-control text-muted" id="" cols="10" rows="6" placeholder="Project details"></textarea>

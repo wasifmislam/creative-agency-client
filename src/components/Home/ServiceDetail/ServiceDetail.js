@@ -6,7 +6,7 @@ const ServiceDetail = ({service}) => {
         
         <div className='col-md-4 text-center card-body mb-5'>
             <div className="card-footer d-flex  align-items-center">
-            <Link>
+            <Link to ={`/dashboard/${service.serviceType}`}>
             
             <img style={{height:'50px'}} src={service.img} alt=""/>
             <h5 className='mt-3 mb-3'>{service.name}</h5>
