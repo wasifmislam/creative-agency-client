@@ -7,17 +7,20 @@ const serviceData = [
     {
         name: 'Web & Mobile design',
         img: 'https://i.ibb.co/02Xwhxv/service1.png',
-        text: 'We craft stunning and amazing web UI, using a well drafted UX to fit yout product.'
+        text: 'We craft stunning and amazing web UI, using a well drafted UX to fit yout product.',
+        id: '12'
     },
     {
         name: 'Grapich Design',
         img: 'https://i.ibb.co/r43W827/service2.png',
-        text: 'Amazing flyers, social media posts and brand represntations that would make your brand stand out.'
+        text: 'Amazing flyers, social media posts and brand represntations that would make your brand stand out.',
+        id: '22'
     },
     {
         name: 'Web Development',
         img: 'https://i.ibb.co/wRTFQBd/service3.png',
-        text: 'With well written codes, we build amazing apps for all platforms, mobile and web apps in general.'
+        text: 'With well written codes, we build amazing apps for all platforms, mobile and web apps in general.',
+        id: '32'
     }
 ]
 
