@@ -22,7 +22,7 @@ const Contact = () => {
                            <textarea name="" className="form-control text-muted" id="" cols="30" rows="10" placeholder="Your message"></textarea>
                        </div>
                        <div className="form-group text-center">
-                           <button type="button" className="btn btn-primary" style={{backgroundColor:'#2D2D2D'}}> Send </button>
+                           <button type="button" className="btn btn-secondary btn-brand" style={{backgroundColor:'#2D2D2D'}}> Send </button>
                        </div>
                    </form>
                </div>

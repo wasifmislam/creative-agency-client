@@ -26,7 +26,7 @@ const Navbar = () => {
                             <a class="nav-link mr-5  " href="#">Contact Us</a>
                         </li>
                         <li class="nav-item">
-                            <button class="btn btn-secondary">Login</button>
+                            <button class="btn btn-secondary btn-brand" style={{backgroundColor:'#2D2D2D'}}>Login</button>
                         </li>
 
 
