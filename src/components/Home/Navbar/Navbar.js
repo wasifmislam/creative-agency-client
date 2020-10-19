@@ -19,16 +19,16 @@ const Navbar = () => {
                     <ul class="navbar-nav ml-auto">
                        
                         <li class="nav-item active">
-                            <a class="nav-link mr-5 " href="/home">Home <span class="sr-only">(current)</span></a>
+                          <Link to='/home'>  <a class="nav-link mr-5 ">Home <span class="sr-only">(current)</span></a> </Link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mr-5 " href="#">Our Portfolio</a>
+                        <Link to='/OurPortfolio'>   <a class="nav-link mr-5 " href="#">Our Portfolio</a> </Link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mr-5 " href="#">Our team</a>
+                        <Link to='/OurTeam'>   <a class="nav-link mr-5 " href="#">Our team</a> </Link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mr-5  " href="#">Contact Us</a>
+                        <Link to='/ContacUs'>   <a class="nav-link mr-5  " href="#">Contact Us</a> </Link>
                         </li>
                         <li>
                          <small><strong>{loggedInUser.name}</strong></small>

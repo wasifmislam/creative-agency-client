@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const ServiceDetail = ({service}) => {
+const ServiceDetail = ({service, handleData}) => {
     return (
         
-        <div className='col-md-4 text-center card-body mb-5'>
+        <div onClick={()=> handleData (service) } className='col-md-4 text-center card-body mb-5'>
             <div className="card-footer d-flex  align-items-center">
             <Link to ={`/dashboard/${service.serviceType}`}>
             

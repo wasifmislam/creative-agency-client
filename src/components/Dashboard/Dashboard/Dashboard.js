@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Navbar from '../../Home/Navbar/Navbar';
 import Sidebar from '../Sidebar/Sidebar';
 import CustomerOrderPlace from '../CustomerOrderPlace/CustomerOrderPlace'
+// import Reviews from './Reviews/Reviews';
 
 
 
@@ -25,6 +26,7 @@ const Dashboard = () => {
                 <div className="col-md-6" >
                 <h3 className="pt-5 pl-3">Order</h3>
                   <CustomerOrderPlace></CustomerOrderPlace>
+                 
                 </div>
                 
             </div>

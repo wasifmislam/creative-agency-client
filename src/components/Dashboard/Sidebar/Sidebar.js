@@ -10,22 +10,22 @@ const Sidebar = () => {
         <div className="sidebar d-flex flex-column justify-content-between col-md-2 py-5 px-4" style={{height:"100vh"}}>
             <ul className="list-unstyled">
                 <li>
-                    <Link to="/doctor/dashboard" className="text-black">
+                    <Link to="/dashboard/:serviceType" className="text-black">
                         <FontAwesomeIcon icon={faGripHorizontal} /> <span>Dashboard</span> 
                     </Link>
                 </li>
                 <li>
-                    <Link to="/doctor/appointment" className="text-black" >
+                    <Link to="/dashboard/:serviceType" className="text-black" >
                         <FontAwesomeIcon icon={faShoppingCart} /> <span>Order</span> 
                     </Link>
                 </li>
                 <li>
-                    <Link to="/doctor/patients" className="text-black" >
+                    <Link to="/serviceList" className="text-black" >
                         <FontAwesomeIcon icon={faShoppingBag} /> <span>Service List</span>
                     </Link>
                 </li>
                 <li>
-                    <Link to="/doctor/prescriptions" className="text-black">
+                    <Link to="/review" className="text-black">
                         <FontAwesomeIcon icon={faComment } /> <span>Review</span>
                     </Link>
                 </li>

@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useContext, useEffect, useState } from 'react';
+import { UserContext } from '../../../App';
 import Testimonial from '../Testimonial/Testimonial';
 // import './Testimonials.css';
 
@@ -24,7 +25,16 @@ const testimonialData = [
     }
 ]
 
+
 const Testimonials = () => {
+    const [reviews, setReviews] = useState([]);
+    console.log(reviews)
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+    useEffect(()=>{
+        fetch('http://localhost:5000/enrolledReviews?email='+loggedInUser.email)
+        .then(res => res.json())
+        .then(data => setReviews(data))
+    }, [])
     return (
        <section className="testimonials my-5 py-5">
            <div className="container">
@@ -34,7 +44,7 @@ const Testimonials = () => {
                </div>
                <div className="card-deck mt-5">
                     {
-                        testimonialData.map(testimonial => <Testimonial testimonial={testimonial} key={testimonial.name}/>)
+                        reviews.map(testimonial => <Testimonial testimonial={testimonial} key={testimonial.name}/>)
                     }
                 </div>
            </div>
