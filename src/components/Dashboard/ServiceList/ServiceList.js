@@ -12,13 +12,9 @@ const containerStyle = {
 
 const ServiceList = ( ) => {
     const [service, setService] = useState([]);
-    console.log(service)
+    // console.log(service)
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
-    //const [serviceData, setServiceData] = useContext(ServiceContext);
-    //const [serviceRegistration, setServiceRegistration] = useState([])
-    //const {serviceType} = useParams()
-    // const{name,img, serviceType, text} = useParams();
-   
+  
     useEffect(()=>{
         fetch('http://localhost:5000/enrolledService?email='+loggedInUser.email)
         .then(res => res.json())
